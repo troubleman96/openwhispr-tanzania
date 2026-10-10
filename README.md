@@ -29,6 +29,8 @@
 
 OpenWhispr turns your voice into text, notes, and actions from your desktop. Press a hotkey, speak, and your words appear at your cursor. Choose between fully private offline transcription with local speech-to-text models like Orukeet, Whisper, NVIDIA Parakeet, and Cohere Transcribe — where your audio never leaves your device — or cloud processing for speed. No data collection, no telemetry, fully open source.
 
+**Tanzania-first community fork:** This fork prioritizes Tanzanian users and Kiswahili workflows while remaining based on OpenWhispr. See the [Tanzania setup guide](docs/tanzania/README.md). The app interface is not yet translated into Kiswahili.
+
 ## Download
 
 | Platform              | Download                                                                                                                                                                                                                                                                                  |
@@ -37,6 +39,8 @@ OpenWhispr turns your voice into text, notes, and actions from your desktop. Pre
 | macOS (Intel) \*      | [`.dmg`](https://github.com/OpenWhispr/openwhispr/releases/latest)                                                                                                                                                                                                                        |
 | Windows               | [`.exe`](https://github.com/OpenWhispr/openwhispr/releases/latest)                                                                                                                                                                                                                        |
 | Linux                 | [`.AppImage`](https://github.com/OpenWhispr/openwhispr/releases/latest) / [`.deb`](https://github.com/OpenWhispr/openwhispr/releases/latest) / [`.rpm`](https://github.com/OpenWhispr/openwhispr/releases/latest) / [`.tar.gz`](https://github.com/OpenWhispr/openwhispr/releases/latest) |
+
+The downloads above are upstream OpenWhispr releases; this fork does not yet publish Tanzania-specific installers.
 
 \* On Intel Macs, live speaker identification and voice fingerprinting are unavailable: they depend on ONNX Runtime, which [stopped shipping macOS x86_64 binaries in 1.24](https://github.com/microsoft/onnxruntime/releases/tag/v1.24.1). Meetings still record and transcribe normally, and notes search falls back to keyword matching instead of semantic search.
 
@@ -64,8 +68,8 @@ brew install --cask openwhispr
 ## Quick start
 
 ```bash
-git clone https://github.com/OpenWhispr/openwhispr.git
-cd openwhispr
+git clone https://github.com/troubleman96/openwhispr-tanzania.git
+cd openwhispr-tanzania
 npm install
 npm run dev
 ```

@@ -16,7 +16,9 @@ const REGISTRY_OPTIONS: LanguageOption[] = registry.languages.map(({ code, label
   label,
   flag,
 }));
-
+const SEARCH_ALIASES: Record<string, readonly string[]> = {
+  sw: ["Kiswahili"],
+};
 interface LanguageSelectorProps {
   value: string;
   onChange: (value: string) => void;
@@ -48,11 +50,12 @@ export default function LanguageSelector({
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const filteredLanguages = showSearch
-    ? items.filter(
-        (lang) =>
-          lang.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          lang.value.toLowerCase().includes(searchQuery.toLowerCase())
-      )
+    ? items.filter((lang) => {
+        const query = searchQuery.toLocaleLowerCase();
+        return [lang.label, lang.value, ...(SEARCH_ALIASES[lang.value] ?? [])].some((value) =>
+          value.toLocaleLowerCase().includes(query)
+        );
+      })
     : items;
 
   const handleSearchQueryChange = useCallback((value: string) => {

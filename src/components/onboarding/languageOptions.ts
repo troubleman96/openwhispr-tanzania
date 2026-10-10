@@ -13,6 +13,7 @@ const NATIVE_LABELS: Record<string, string> = {
   ko: "한국어",
   pt: "Português",
   ru: "Русский",
+  sw: "Kiswahili",
   "zh-CN": "简体中文",
   "zh-TW": "繁體中文",
 };
@@ -26,9 +27,10 @@ const LANGUAGE_LABELS: Record<string, string> = {
 
 const SEARCH_ALIASES: Record<string, string> = {
   hi: "hind hindustani",
+  sw: "kiswahili swahili",
 };
 
-const PRIMARY_LANGUAGE_CODES = ["en-US", "zh-CN", "es", "ar", "af"];
+const PRIMARY_LANGUAGE_CODES = ["sw", "en-US", "zh-CN", "es", "ar", "af"];
 
 export type OnboardingLanguage = (typeof registry.languages)[number];
 
