@@ -1,13 +1,13 @@
 # Local Whisper Setup
 
-OpenWhispr supports local speech-to-text processing using whisper.cpp. This keeps your audio completely private—nothing leaves your device.
+Bonga supports local speech-to-text processing using whisper.cpp. This keeps your audio completely private—nothing leaves your device.
 
 ## Quick Start
 
 1. Open the **Control Panel** (right-click tray icon or click the overlay)
 2. Go to **Settings** → **Speech to Text Processing**
 3. Enable **Use Local Whisper**
-4. Select a model (recommended: `base`)
+4. Select a model (`large` is recommended for Kiswahili when your computer has enough memory; `base` is a lighter option)
 5. Click **Save**
 
 The first transcription will download the model automatically.
@@ -23,6 +23,8 @@ The first transcription will download the model automatically.
 | large  | 3GB   | Slowest | Best    | ~10GB | Maximum quality  |
 | turbo  | 1.6GB | Fast    | High    | ~6GB  | Fast + accurate  |
 
+For the strongest Kiswahili accuracy, use **Large** (`large-v3`): it needs about 3 GB of disk space and around 10 GB of memory. Choose `base` or `small` on a modest computer; accuracy varies with accents, background noise, microphone quality, and Kiswahili-English code-switching.
+
 ## GPU Acceleration
 
 Local Whisper can run on your GPU for much faster transcription:
@@ -31,11 +33,11 @@ Local Whisper can run on your GPU for much faster transcription:
 - **NVIDIA (Windows/Linux)**: one-click CUDA runtime download from the GPU card in the transcription model picker
 - **AMD / Intel (Windows/Linux)**: one-click Vulkan runtime download from the same GPU card — covers Radeon and Arc/integrated GPUs
 
-The GPU runtime is downloaded on demand with SHA-256-verified checksums. If the GPU server crashes or fails to start (unsupported GPU, out of VRAM), OpenWhispr automatically falls back to CPU transcription and shows a notice — dictation keeps working.
+The GPU runtime is downloaded on demand with SHA-256-verified checksums. If the GPU server crashes or fails to start (unsupported GPU, out of VRAM), Bonga automatically falls back to CPU transcription and shows a notice — dictation keeps working.
 
 ## How It Works
 
-OpenWhispr uses whisper.cpp, a high-performance C++ implementation of OpenAI's Whisper model:
+Bonga uses whisper.cpp, a high-performance C++ implementation of OpenAI's Whisper model:
 
 1. whisper.cpp binary is bundled with the app (or uses system installation as fallback)
 2. GGML models are downloaded on first use to `~/.cache/openwhispr/whisper-models/`

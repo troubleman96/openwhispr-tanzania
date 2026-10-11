@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="src/assets/logo.svg" alt="OpenWhispr" width="120" />
+  <img src="src/assets/logo.svg" alt="Bonga" width="120" />
 </p>
 
-<h1 align="center">OpenWhispr</h1>
+<h1 align="center">Bonga</h1>
 
 <p align="center">
   <a href="https://github.com/OpenWhispr/openwhispr/blob/main/LICENSE"><img src="https://img.shields.io/github/license/OpenWhispr/openwhispr?style=flat" alt="License" /></a>
@@ -27,9 +27,9 @@
 
 ---
 
-OpenWhispr turns your voice into text, notes, and actions from your desktop. Press a hotkey, speak, and your words appear at your cursor. Choose between fully private offline transcription with local speech-to-text models like Orukeet, Whisper, NVIDIA Parakeet, and Cohere Transcribe — where your audio never leaves your device — or cloud processing for speed. No data collection, no telemetry, fully open source.
+**Bonga** turns your voice into text, notes, and actions from your desktop. Press a hotkey, speak, and your words appear at your cursor. Choose between fully private offline transcription with local speech-to-text models like Orukeet, Whisper, NVIDIA Parakeet, and Cohere Transcribe — where your audio never leaves your device — or cloud processing for speed. No data collection, no telemetry, fully open source.
 
-**Tanzania-first community fork:** This fork keeps OpenWhispr’s existing interface and core behavior intact, while adding setup guidance for Tanzanian users and Kiswahili transcription. See the [Tanzania setup guide](docs/tanzania/README.md). The interface has not been translated into Kiswahili.
+**Tanzania-first community fork:** Bonga keeps the original interface layout and core behavior, adds a Kiswahili UI and setup guidance, and retains the other supported UI and transcription languages. See the [Tanzania setup guide](docs/tanzania/README.md). The Bonga name is a user-facing brand; app and data identifiers remain compatible with the upstream project.
 
 ## Download
 

@@ -9,6 +9,7 @@ describe("normalizeUiLanguage", () => {
     assert.equal(normalizeUiLanguage("zh_TW"), "zh-TW");
     assert.equal(normalizeUiLanguage("en-US"), "en");
     assert.equal(normalizeUiLanguage("pt-BR"), "pt");
+    assert.equal(normalizeUiLanguage("sw-TZ"), "sw");
   });
 
   it("maps Chinese script and region tags onto zh-CN / zh-TW", () => {
@@ -21,8 +22,8 @@ describe("normalizeUiLanguage", () => {
     assert.equal(normalizeUiLanguage("zh-HK"), "zh-TW");
   });
 
-  it("falls back to English for unknown languages", () => {
-    assert.equal(normalizeUiLanguage("ko-KR"), "en");
-    assert.equal(normalizeUiLanguage(""), "en");
+  it("falls back to Kiswahili for unknown languages", () => {
+    assert.equal(normalizeUiLanguage("ko-KR"), "sw");
+    assert.equal(normalizeUiLanguage(""), "sw");
   });
 });

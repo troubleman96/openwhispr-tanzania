@@ -7,6 +7,7 @@ import itTranslation from "./it/translation.json";
 import jaTranslation from "./ja/translation.json";
 import ptTranslation from "./pt/translation.json";
 import ruTranslation from "./ru/translation.json";
+import swTranslation from "./sw/translation.json";
 import zhCNTranslation from "./zh-CN/translation.json";
 import zhTWTranslation from "./zh-TW/translation.json";
 
@@ -19,6 +20,7 @@ export const TRANSLATIONS_BY_LOCALE = {
   pt: ptTranslation,
   it: itTranslation,
   ru: ruTranslation,
+  sw: swTranslation,
   ja: jaTranslation,
   "zh-CN": zhCNTranslation,
   "zh-TW": zhTWTranslation,

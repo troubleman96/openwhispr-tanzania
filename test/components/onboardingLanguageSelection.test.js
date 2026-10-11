@@ -9,7 +9,7 @@ test("onboarding languages use the reference priority without auto-detect", asyn
 
   assert.deepEqual(
     options.slice(0, 5).map(({ code }) => code),
-    ["en-US", "zh-CN", "es", "ar", "af"]
+    ["sw", "en-US", "zh-CN", "es", "ar"]
   );
   assert.equal(
     options.some(({ code }) => code === "auto"),

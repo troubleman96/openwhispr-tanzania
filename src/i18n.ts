@@ -5,6 +5,7 @@ import { TRANSLATIONS_BY_LOCALE } from "./locales/translations";
 
 export const SUPPORTED_UI_LANGUAGES = [
   "en",
+  "sw",
   "ar",
   "es",
   "fr",
@@ -45,13 +46,17 @@ export function normalizeUiLanguage(language: string | null | undefined): UiLang
     return base;
   }
 
-  return "en";
+  return "sw";
 }
 
 const resources = {
   en: {
     translation: TRANSLATIONS_BY_LOCALE.en,
     prompts: PROMPTS_BY_LOCALE.en,
+  },
+  sw: {
+    translation: TRANSLATIONS_BY_LOCALE.sw,
+    prompts: PROMPTS_BY_LOCALE.sw,
   },
   ar: {
     translation: TRANSLATIONS_BY_LOCALE.ar,
@@ -101,7 +106,12 @@ const browserLanguage =
 const storageLanguage =
   typeof window !== "undefined" ? window.localStorage?.getItem("uiLanguage") : undefined;
 
-const initialLanguage = normalizeUiLanguage(storageLanguage || browserLanguage || "en");
+const detectedLanguage = normalizeUiLanguage(browserLanguage || "sw");
+const initialLanguage = storageLanguage
+  ? normalizeUiLanguage(storageLanguage)
+  : detectedLanguage === "en"
+    ? "sw"
+    : detectedLanguage;
 
 void i18n.use(initReactI18next).init({
   resources,

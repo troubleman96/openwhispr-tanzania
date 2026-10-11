@@ -4,9 +4,9 @@
   "extraMetadata": {
     "windowsTrayIdentity": true
   },
-  "productName": "OpenWhispr",
+  "productName": "Bonga",
   "protocols": {
-    "name": "OpenWhispr Protocol",
+    "name": "Bonga Protocol",
     "schemes": ["openwhispr"]
   },
   "directories": {
@@ -170,11 +170,11 @@
     "extendInfo": {
       "LSUIElement": false,
       "CFBundleIconName": "openwhispr",
-      "NSMicrophoneUsageDescription": "OpenWhispr uses the microphone to capture your voice for transcription.",
-      "NSAudioCaptureUsageDescription": "OpenWhispr uses system audio to capture other participants' audio from calls and meetings.",
-      "NSAccessibilityUsageDescription": "OpenWhispr needs accessibility permissions to paste transcribed text into other applications.",
-      "NSCalendarsUsageDescription": "OpenWhispr reads your calendar to detect upcoming meetings and link meeting notes to events.",
-      "NSCalendarsFullAccessUsageDescription": "OpenWhispr reads your calendar to detect upcoming meetings and link meeting notes to events."
+      "NSMicrophoneUsageDescription": "Bonga uses the microphone to capture your voice for transcription.",
+      "NSAudioCaptureUsageDescription": "Bonga uses system audio to capture other participants' audio from calls and meetings.",
+      "NSAccessibilityUsageDescription": "Bonga needs accessibility permissions to paste transcribed text into other applications.",
+      "NSCalendarsUsageDescription": "Bonga reads your calendar to detect upcoming meetings and link meeting notes to events.",
+      "NSCalendarsFullAccessUsageDescription": "Bonga reads your calendar to detect upcoming meetings and link meeting notes to events."
     }
   },
   "win": {
@@ -268,7 +268,7 @@
     "include": "resources/nsis/installer.nsh"
   },
   "dmg": {
-    "title": "OpenWhispr",
+    "title": "Bonga",
     "icon": "src/assets/icon.icns",
     "window": {
       "width": 540,

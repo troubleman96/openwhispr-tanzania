@@ -447,11 +447,12 @@
     },
     {
       "code": "sw",
-      "label": "Swahili",
-      "flag": "\uD83C\uDDF0\uD83C\uDDEA",
+      "label": "Kiswahili",
+      "flag": "\uD83C\uDDF9\uD83C\uDDFF",
       "whisper": true,
       "parakeet": false,
-      "assemblyai": false
+      "assemblyai": false,
+      "instruction": "LANGUAGE CONTEXT: The user's preferred language is Kiswahili (Swahili). The transcribed text will be in Kiswahili. You MUST write your entire output in natural Kiswahili while maintaining proper Kiswahili grammar, spelling, and punctuation. If the user naturally uses English words or technical terms, preserve those as-is."
     },
     {
       "code": "sv",

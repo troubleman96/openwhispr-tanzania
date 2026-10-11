@@ -7,6 +7,7 @@ import itPrompts from "./it/prompts.json";
 import jaPrompts from "./ja/prompts.json";
 import ptPrompts from "./pt/prompts.json";
 import ruPrompts from "./ru/prompts.json";
+import swPrompts from "./sw/prompts.json";
 import zhCNPrompts from "./zh-CN/prompts.json";
 import zhTWPrompts from "./zh-TW/prompts.json";
 
@@ -26,6 +27,7 @@ export const de: PromptBundle = dePrompts;
 export const pt: PromptBundle = ptPrompts;
 export const it: PromptBundle = itPrompts;
 export const ru: PromptBundle = ruPrompts;
+export const sw: PromptBundle = swPrompts;
 export const ja: PromptBundle = jaPrompts;
 export const zhCN: PromptBundle = zhCNPrompts;
 export const zhTW: PromptBundle = zhTWPrompts;
@@ -39,6 +41,7 @@ export const PROMPTS_BY_LOCALE = {
   pt,
   it,
   ru,
+  sw,
   ja,
   "zh-CN": zhCN,
   "zh-TW": zhTW,

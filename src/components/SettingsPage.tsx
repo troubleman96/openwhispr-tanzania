@@ -183,6 +183,7 @@ interface SettingsPageProps {
 }
 
 const UI_LANGUAGE_OPTIONS: import("./ui/LanguageSelector").LanguageOption[] = [
+  { value: "sw", label: "Kiswahili", flag: "🇹🇿" },
   { value: "en", label: "English", flag: "🇺🇸" },
   { value: "ar", label: "العربية", flag: "🇦🇪" },
   { value: "es", label: "Español", flag: "🇪🇸" },
@@ -3696,7 +3697,7 @@ export default function SettingsPage({
                           }),
                           desc: t("settingsPage.general.waylandPaste.guide.group.step2Desc", {
                             defaultValue:
-                              "Group changes only take effect after a new login session. Log out of your desktop and log back in, then reopen OpenWhispr.",
+                              "Group changes only take effect after a new login session. Log out of your desktop and log back in, then reopen Bonga.",
                           }),
                         },
                       ],

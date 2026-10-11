@@ -1,13 +1,13 @@
 # Tanzania-first setup
 
-This community fork is for people who live, study, work, and collaborate in Tanzania. It keeps the existing OpenWhispr interface and core behavior; the Tanzania-specific addition is guidance for using the existing Kiswahili transcription support.
+This community fork is for people who live, study, work, and collaborate in Tanzania. **Bonga** keeps the original interface layout and core behavior, makes Kiswahili the first-run UI language, and retains the other supported UI and transcription languages.
 
 ## Kiswahili dictation
 
-1. During first-run setup, choose **Swahili** in the existing spoken-language picker. If you also dictate in English, select English too.
-2. In **Settings → Language**, set **Transcription language** to **Swahili** for Kiswahili-first dictation, or leave it on **Auto** if you regularly switch languages and want detection.
-3. For on-device processing, use the local **Whisper** provider. OpenWhispr's language registry marks Swahili (`sw`) as supported by Whisper. Other model providers have different language lists; for example, the bundled Parakeet TDT v3 catalog does not list Swahili.
-4. Start with Whisper's `base` model on a modest computer; use a larger model if your device has enough memory and you want to compare accuracy. The first model download needs internet. Once downloaded, local Whisper processes audio on your device without sending the recording to a transcription cloud service.
+1. During first-run setup, choose **Kiswahili** in the spoken-language picker. If you also dictate in English, select English too.
+2. In **Settings → Language**, set **Transcription language** to **Kiswahili** for Kiswahili-first dictation, or leave it on **Auto** if you regularly switch languages and want detection.
+3. For on-device processing, use the local **Whisper** provider. Bonga's language registry marks Kiswahili (`sw`) as supported by Whisper. Other model providers have different language lists; for example, the bundled Parakeet TDT v3 catalog does not list Kiswahili.
+4. For the strongest Kiswahili accuracy, use Whisper **Large** (`large-v3`) if your computer has about 10 GB of available memory; it needs about 3 GB of disk space. Use `base` on a modest computer for quicker, lighter transcription. The first model download needs internet. Once downloaded, local Whisper processes audio on your device without sending the recording to a transcription cloud service.
 
 See [Local Whisper Setup](../../LOCAL_WHISPER_SETUP.md) for model sizes, installation steps, and troubleshooting. Transcription quality can vary with microphone quality, speaker, accent, background noise, and Kiswahili-English code-switching; test with your own everyday speech before relying on it for important records.
 
@@ -17,8 +17,8 @@ Local transcription is useful when you want audio to stay on your device, but th
 
 ## Current scope
 
-- This fork preserves OpenWhispr's existing UI and interaction patterns; it does not replace them with a separate dashboard or prototype.
-- The app interface is not translated into Kiswahili in this update; use the existing **Swahili** label in the app.
+- This fork preserves the original UI layout and interaction patterns; it does not replace them with a separate dashboard or prototype.
+- The interface is available in **Kiswahili** and the other existing supported UI languages.
 - The download links in the main README lead to upstream OpenWhispr releases; this fork does **not** yet publish Tanzania-specific installers.
 
 ## Help improve the Tanzania experience
