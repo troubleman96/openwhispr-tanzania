@@ -29,7 +29,7 @@
 
 OpenWhispr turns your voice into text, notes, and actions from your desktop. Press a hotkey, speak, and your words appear at your cursor. Choose between fully private offline transcription with local speech-to-text models like Orukeet, Whisper, NVIDIA Parakeet, and Cohere Transcribe — where your audio never leaves your device — or cloud processing for speed. No data collection, no telemetry, fully open source.
 
-**Tanzania-first community fork:** This fork prioritizes Tanzanian users and Kiswahili workflows while remaining based on OpenWhispr. See the [Tanzania setup guide](docs/tanzania/README.md). The app interface is not yet translated into Kiswahili.
+**Tanzania-first community fork:** This fork keeps OpenWhispr’s existing interface and core behavior intact, while adding setup guidance for Tanzanian users and Kiswahili transcription. See the [Tanzania setup guide](docs/tanzania/README.md). The interface has not been translated into Kiswahili.
 
 ## Download
 
